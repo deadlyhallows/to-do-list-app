@@ -1,5 +1,5 @@
 .part1
-{   width: 50%;
+{   
 	left: 0;
     background-color:#cc4444;
     height:12%;
@@ -13,7 +13,7 @@
 
 
 .part2
- {  width: 50%;
+ {  
  	background-color: orange;
  	height:12%;
  	text-align: center;
@@ -33,3 +33,73 @@
     top: 0;
 }
 
+ul li{
+	position: relative;
+	padding-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  p.head{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  p.head {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input{
+    width:90px;
+  },
+  ul li{
+  	white-space: normal;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  input{
+    width:190px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  p.head {
+    font-size: 30px;
+  }
+}
+    font-size: 30px;
+  }
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: normal;
+}
+
+
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}

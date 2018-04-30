@@ -1,33 +1,48 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="downloads/basetodo.css">
+	<link rel="stylesheet" type="text/css" href="downloads/basetodo.css">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<style type="text/css">
+  		.close {
+  		position: absolute;
+  		right: 0;
+  		top: 0;}
 
+  		ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+  		
+
+  	</style>
 </head>
 <body>
-	<div style="width: 100%">
-		<div class="part1">
-			<div>
-				<h1>Things To-Do</h1>
-				<input id="abc" type="text"  placeholder="Add Events" />
+	<div class = "container-fluid">
+		<div class="row">
+			<div class="part1  col-xs-6 col-md-6">
+				<p class="head">Things To-Do</p>
+				<input id="abc" type="text"  placeholder="Add Events..." />
         		<button onclick="clickFunction()">Add</button>
         	</div>
-        	<div>
-        		<br>
-        		<ul id="myUL"></ul>
+        	<div class="vl"></div>
+			<div class="part2 col-xs-6 col-md-6">
+				<p class="head">Things Done</p>
+				
         	</div>
         </div>
-        	
-        <div class="vl"></div>
-		<div class="part2 ">
-			<h1>Things Done</h1>
-			<br>
-			<br>
-			<div>
+        <div class="row">
+        	<div class=" col-xs-6 col-md-6">
+        		
+        		<ul id="myUL"></ul>
+        	</div>
+        	<div class=" col-xs-6 col-md-6">
 				<ul id="myUL1"></ul>
         	</div>	
 		</div>
+	
 	</div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/myScript.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

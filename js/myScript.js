@@ -1,4 +1,4 @@
-$("ul").hover(function(){
+$("li").hover(function(){
     $(this).css("background-color", "grey");
     }, function(){
     $(this).css("background-color", "white");
@@ -60,8 +60,10 @@ function clickFunction() {
       d.appendChild(div);
       console.log(d);
       
-    }
-  }
+    }}
 }
 
-
+function newList()
+{d=document.getElementById("myUL1");
+console.log(d);
+d.style.display = "none";}
